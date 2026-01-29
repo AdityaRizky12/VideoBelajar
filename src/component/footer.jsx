@@ -8,7 +8,7 @@ const FooterSection = () => {
         <div 
           className="relative rounded-xl overflow-hidden bg-cover bg-center h-[400px] flex flex-col items-center justify-center text-center p-6"
           style={{ 
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(src/img/Newsletter.jpg)` 
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/img/Newsletter.jpg)` 
           }}
         >
           <span className="text-white tracking-widest text-sm mb-2 uppercase">Newsletter</span>

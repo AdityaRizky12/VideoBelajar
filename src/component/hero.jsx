@@ -14,7 +14,7 @@ const Hero = () => {
           bg-center
         "
         style={{
-          backgroundImage: "url(src/img/hero.jpg)"
+          backgroundImage: "url(/img/hero.jpg)"
 
         }}
       >
