@@ -19,18 +19,29 @@ const handleLogout = () => {
         </a>
       </div>
 
-      <div className="flex-none">
+      <div className="flex-none mr-15">
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
+            <div className="w-10 rounded-full ">
               <img alt="Avatar" src="/img/navbar.png" />
             </div>
           </div>
 
           <ul
             tabIndex={-1}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
           >
+
+      
+      <li>
+  <button
+    onClick={() => navigate("/")}
+    className="w-full text-left"
+    type="button"
+  >
+   Home
+  </button>
+</li>
             <li>
             <button
         onClick={handleLogout}
@@ -39,7 +50,18 @@ const handleLogout = () => {
         >
     Logout
   </button>
+      </li>
+      <li>
+  <button
+    onClick={() => navigate("/create-course")}
+    className="w-full text-left"
+    type="button"
+  >
+    Create Course
+  </button>
 </li>
+
+
         <li><a>Profile</a></li>
         <li><a>Settings</a></li>
 

@@ -1,15 +1,17 @@
 import Navbar from "./component/navbar";
 import Hero from "./component/hero";
-import CourseSection from "./component/courseSection"
+import VideoCatalog from "./component/courseSection";
 import FooterSection from "./component/footer"
+import Newlesster from "./component/Newlesster";
+import Kategori from "./component/kategori";
 
-const Home = () => {
+const Home = ({ courses }) => {
     return ( 
         <div>
-          <Navbar/>
           <Hero/>
-          <CourseSection/>
-        <FooterSection/>
+          <Kategori/>
+          <VideoCatalog courses={courses}/>
+          <Newlesster/>
         </div>
      );
 }
